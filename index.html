@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Website StudioLens</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website de Câmeras e acessórios tecnológicos">
+    <meta name="keywords" content="Web, Câmera, HTML">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="author" content="Aleksandra Santos Berto">
+    <style>
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+           <div class="logo">
+            <img src="img/logo.png" alt="">
+           </div> 
+           <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Acessórios</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+           </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+
+            <img src="img/img-camera.png" alt="Imagem de uma câmera fotográfica" class="camera">
+
+            <div id="circle">
+                <div class="feature one">
+                    <img src="img/lente.png" alt="Icone de uma lente">
+                    <div>
+                        <h2>Lente</h2>
+                        <p>Grande angular, zoom óptico 10x.</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="img/processador.png" alt="Icone de um processador">
+                    <div>
+                    <h2>Resolução</h2>
+                    <p>24MP Full HD 1080p/60</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="img/iso.png" alt="Icone escrito ISO">
+                    <div>
+                    <h2>ISO</h2>
+                    <p>Até 51.200 para fotos noturnas.</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="img/bateria.png" alt="Icone de uma bateria">
+                    <div>
+                    <h2>Bateria</h2>
+                     <p>2280mAh e 16Wh, longa duração</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="img/seta.png" alt="Icone de seta para cima" id="setaup">
+            <h3>Características</h3>
+            <img src="img/seta.png" alt="Icone de seta para baixo" id="setadown">
+        </div>
+    </div>
+
+    <script> 
+        var circle = document.getElementById("circle");/*  */
+        var setaup = document.getElementById("setaup");
+        var setadown = document.getElementById("setadown");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        setaup.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        setadown.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+</body>
+
+</html>
