@@ -8,7 +8,7 @@ O site foi uma excelente oportunidade para praticar a integração entre as trê
 * **JavaScript:** para a lógica de rotação, que controla a interação do usuário.
 
 ## 🚀 Acesse o Site
-
+https://aleksandraberto.github.io/WebsiteStudioLens-repositorio/
 
 ## 📂 Estrutura do projeto
 /StudioLensWebsite
